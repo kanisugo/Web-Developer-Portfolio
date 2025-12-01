@@ -9,18 +9,18 @@ import { ImageWithFallback } from './figma/ImageWithFallback'
 export function ProjectsSection() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with Next.js, TypeScript, and Stripe integration. Features include user authentication, product management, and real-time inventory tracking.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+      title: 'Facies Prediction using Variotional Autoencoders',
+      description: 'Implemented unsupervised facies classification using VAEs for latent feature extraction and GMMs for clustering, imporving subsurface characterization accuracy by 15%.',
+      image: 'https://cdn.dribbble.com/userupload/43407270/file/original-ef5fa599e0447dcbfa82f4b34b0eb01e.png?w=600&h=400&fit=crop',
       technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
       github: '#',
       live: '#',
       featured: true
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
+      title: 'Facies Prediction using DDFN Neural Net',
+      description: 'Designed and deployed Deep Feedforward Neural Networks (DFFNs) with softmax output for facies classification on well log data, achieving 92% accuracy on test datasets and enhancing reservoir modeling workflows.',
+      image: 'https://cdn.dribbble.com/userupload/12177225/file/original-7a9990608a910dd09bf5496eabd44901.jpg?w=600&h=400&fit=crop',
       technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
       github: '#',
       live: '#',

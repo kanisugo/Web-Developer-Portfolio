@@ -6,25 +6,25 @@ import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { Textarea } from './ui/textarea'
 import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si"
-import { Github, Linkedin, Mail, Twitter, MapPin, Phone } from 'lucide-react'
+import {HiOutlineMail as SiMail, HiOutlinePhone as SiPhone, HiOutlineMap as SiMapPin} from "react-icons/hi"
 
 
 export function ContactSection() {
   const contactInfo = [
     {
-      icon: Mail,
+      icon: SiMail,
       label: 'Email',
       value: 'kani.sugotra619@gmail.com',
       href: 'mailto:kani.sugotra619@gmail.com'
     },
     {
-      icon: Phone,
+      icon: SiPhone,
       label: 'Phone',
       value: '+91 90798 14762',
       href: 'tel:+919079814762'
     },
     {
-      icon: MapPin,
+      icon: SiMapPin,
       label: 'Location',
       value: 'Mumbai, India',
       href: '#'
@@ -35,7 +35,7 @@ export function ContactSection() {
     { icon: SiGithub, href: 'https://github.com/kanisugo', label: 'GitHub' },
     { icon: SiLinkedin, href: 'https://linkedin.com/in/kanishk-sugotra', label: 'LinkedIn' },
     { icon: SiLeetcode, href: 'https://leetcode.com/u/kanishksugotra/', label: 'Leetcode' },
-    { icon: Mail, href: 'mailto:kani.sugotra619@gmail.com', label: 'Email' }
+    { icon: SiMail, href: 'mailto:kani.sugotra619@gmail.com', label: 'Email' }
   ]
 
   return (
