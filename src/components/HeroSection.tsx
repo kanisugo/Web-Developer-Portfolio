@@ -60,7 +60,7 @@ export function HeroSection() {
             transition={{ delay: 0.4 }}
             className="text-5xl md:text-7xl text-white mb-6"
           >
-            Alex Johnson
+            Kanishk Sugotra
           </motion.h1>
           
           <motion.div
