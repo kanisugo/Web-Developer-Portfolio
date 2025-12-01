@@ -5,7 +5,9 @@ import { Card } from './ui/card'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { Textarea } from './ui/textarea'
+import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si"
 import { Github, Linkedin, Mail, Twitter, MapPin, Phone } from 'lucide-react'
+
 
 export function ContactSection() {
   const contactInfo = [
@@ -30,9 +32,9 @@ export function ContactSection() {
   ]
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/kanisugo', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/kanishk-sugotra', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://leetcode.com/u/kanishksugotra/', label: 'Leetcode' },
+    { icon: SiGithub, href: 'https://github.com/kanisugo', label: 'GitHub' },
+    { icon: SiLinkedin, href: 'https://linkedin.com/in/kanishk-sugotra', label: 'LinkedIn' },
+    { icon: SiLeetcode, href: 'https://leetcode.com/u/kanishksugotra/', label: 'Leetcode' },
     { icon: Mail, href: 'mailto:kani.sugotra619@gmail.com', label: 'Email' }
   ]
 
@@ -186,7 +188,7 @@ export function ContactSection() {
           className="border-t border-white/10 mt-16 pt-8 text-center"
         >
           <p className="text-gray-400">
-            © 2025 Alex Johnson. Designed &amp; Built with ❤️ using React and Tailwind CSS.
+            © 2026 Kanishk Sugotra. Designed &amp; Built with ❤️ using React and Tailwind CSS.
           </p>
         </motion.div>
       </div>
