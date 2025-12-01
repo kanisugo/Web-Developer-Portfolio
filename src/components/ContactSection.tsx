@@ -12,28 +12,28 @@ export function ContactSection() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex.johnson@email.com',
-      href: 'mailto:alex.johnson@email.com'
+      value: 'kani.sugotra619@gmail.com',
+      href: 'mailto:kani.sugotra619@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+91 90798 14762',
+      href: 'tel:+919079814762'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Mumbai, India',
       href: '#'
     }
   ]
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Mail, href: '#', label: 'Email' }
+    { icon: Github, href: 'https://github.com/kanisugo', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/kanishk-sugotra', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://leetcode.com/u/kanishksugotra/', label: 'Leetcode' },
+    { icon: Mail, href: 'mailto:kani.sugotra619@gmail.com', label: 'Email' }
   ]
 
   return (

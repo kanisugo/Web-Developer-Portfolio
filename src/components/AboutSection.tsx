@@ -51,19 +51,20 @@ export function AboutSection() {
             className="space-y-6"
           >
             <h3 className="text-2xl text-white mb-4">
-              Passionate about creating digital experiences that matter
+              Building geoscience solutions that create real impact
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              With over 5 years of experience in web development, I've had the privilege of working with 
-              startups and established companies to bring their digital visions to life. My journey began 
-              with a curiosity about how websites work, and it has evolved into a passion for creating 
-              seamless, performant applications.
+              With over 2 years of experience in developing and deploying deep learning models for facies classification
+              I've worked on enhancing subsurface prediction accuracy and standardizing analytical workflows. My journey began 
+              with an interest in understanding Earth processes through data, and it has grown into a commitment to engineering
+              scalable ML models that automate geospatial and geological workflows.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I specialize in React, Node.js, and modern JavaScript frameworks, but I'm always eager to 
-              learn new technologies that can help me build better solutions. When I'm not coding, you'll 
-              find me contributing to open-source projects, writing technical articles, or exploring the 
-              latest in web technologies.
+              My work centers on developing end-to-end pipelines that integrate data preprocessing, feature engineering
+              model training using Python, scikit-learn, and modern deep learning frameworks.
+              Beyond model development, I focus on creating reliable code that enhance operational efficiency and
+              decision-making in geoscience and geospatial domains.
+              When I'm not coding, you'll find me doing leetcode, playing football, brewing coffee, or indulging in a good book.
             </p>
             
             <motion.div

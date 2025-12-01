@@ -75,7 +75,7 @@ export function HeroSection() {
             </span>
             {' '}specializing in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              Machine Learning
+              Subsurface Intelligence
             </span>
           </motion.div>
           
@@ -85,8 +85,8 @@ export function HeroSection() {
             transition={{ delay: 0.8 }}
             className="text-gray-400 text-lg max-w-2xl mx-auto mb-8"
           >
-            I craft data-driven insights using machine learning algorithms to solve and automated complex geospatial challenges.
-            Passionate about clean code, user experience, and bringing ideas to life.
+            I craft scalable, machine-learning-driven insights that automate and optimize complex geospatial workflows.
+            Passionate about clean code, seamless UX, and transforming ideas into real-world impact.
           </motion.p>
           
           <motion.div

@@ -6,30 +6,30 @@ import { Card } from './ui/card'
 export function SkillsSection() {
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: 'Machine Learning',
       skills: [
-        { name: 'React/Next.js', level: 95, color: 'from-blue-400 to-blue-600' },
-        { name: 'TypeScript', level: 90, color: 'from-blue-500 to-blue-700' },
-        { name: 'Tailwind CSS', level: 88, color: 'from-cyan-400 to-cyan-600' },
-        { name: 'Vue.js', level: 75, color: 'from-green-400 to-green-600' }
+        { name: 'Supervised Learning', level: 95, color: 'from-blue-400 to-blue-600' },
+        { name: 'Unsupervised Learning', level: 90, color: 'from-blue-500 to-blue-700' },
+        { name: 'Deep Learning (DFFN, CNNs, VAEs)', level: 88, color: 'from-cyan-400 to-cyan-600' },
+        { name: 'Model Optimization', level: 75, color: 'from-green-400 to-green-600' }
       ]
     },
     {
-      title: 'Backend',
+      title: 'Subsurface',
       skills: [
-        { name: 'Node.js', level: 90, color: 'from-green-500 to-green-700' },
-        { name: 'Python', level: 85, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'PostgreSQL', level: 80, color: 'from-indigo-400 to-indigo-600' },
-        { name: 'MongoDB', level: 78, color: 'from-green-600 to-green-800' }
+        { name: 'Reservoir Modelling', level: 90, color: 'from-green-500 to-green-700' },
+        { name: 'Facies Classification', level: 85, color: 'from-yellow-400 to-yellow-600' },
+        { name: 'Subsurface Data Integration', level: 80, color: 'from-indigo-400 to-indigo-600' },
+        { name: 'Exploration Geoscience', level: 78, color: 'from-green-600 to-green-800' }
       ]
     },
     {
-      title: 'Tools & Others',
+      title: 'Programming & Tools',
       skills: [
-        { name: 'Git/GitHub', level: 92, color: 'from-gray-400 to-gray-600' },
-        { name: 'Docker', level: 82, color: 'from-blue-600 to-blue-800' },
-        { name: 'AWS', level: 75, color: 'from-orange-400 to-orange-600' },
-        { name: 'GraphQL', level: 70, color: 'from-pink-400 to-pink-600' }
+        { name: 'Python', level: 92, color: 'from-gray-400 to-gray-600' },
+        { name: 'SQL', level: 82, color: 'from-blue-600 to-blue-800' },
+        { name: 'Git/Github', level: 75, color: 'from-orange-400 to-orange-600' },
+        { name: 'Petrel', level: 70, color: 'from-pink-400 to-pink-600' }
       ]
     }
   ]
@@ -111,10 +111,10 @@ export function SkillsSection() {
           className="mt-16 text-center"
         >
           <h3 className="text-2xl text-white mb-8">Technologies I Work With</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+          <div className="flex flex-wrap justify-center items-center gap-4 opacity-60">
             {[
-              'React', 'TypeScript', 'Node.js', 'Next.js', 'Python', 'PostgreSQL', 
-              'MongoDB', 'Docker', 'AWS', 'Git', 'Tailwind', 'GraphQL'
+              'Python', 'Git', 'Github', 'SQL', 'Pandas', 'Numpy', 'Scikit-Learn', 
+              'Tensor Flow', 'PyTorch', 'Spectral', 'Shell', 'AWS'
             ].map((tech, index) => (
               <motion.span
                 key={tech}
