@@ -71,11 +71,11 @@ export function HeroSection() {
           >
             I'm a{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
-              Full-Stack Developer
+              Geo-Data Scientist
             </span>
             {' '}specializing in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              Modern Web Applications
+              Machine Learning
             </span>
           </motion.div>
           
@@ -85,7 +85,7 @@ export function HeroSection() {
             transition={{ delay: 0.8 }}
             className="text-gray-400 text-lg max-w-2xl mx-auto mb-8"
           >
-            I craft exceptional digital experiences using cutting-edge technologies like React, Node.js, and TypeScript. 
+            I craft data-driven insights using machine learning algorithms to solve and automated complex geospatial challenges.
             Passionate about clean code, user experience, and bringing ideas to life.
           </motion.p>
           
