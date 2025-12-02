@@ -146,7 +146,7 @@ export function ContactSection() {
                   className="flex items-center space-x-4 p-4 bg-gray-900/50 rounded-lg border border-white/10 hover:border-emerald-500/50 transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500/30 transition-all duration-300">
-                    <info.icon className="w-6 h-6" />
+                    <info.icon size={20} color="currentColor" />
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">{info.label}</p>
@@ -163,6 +163,8 @@ export function ContactSection() {
                   <motion.a
                     key={social.label}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ delay: index * 0.1, duration: 0.3 }}
@@ -171,7 +173,7 @@ export function ContactSection() {
                     whileTap={{ scale: 0.95 }}
                     className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-emerald-500 hover:text-white transition-all duration-300"
                   >
-                    <social.icon className="w-5 h-5" />
+                    <social.icon size={20} />
                   </motion.a>
                 ))}
               </div>

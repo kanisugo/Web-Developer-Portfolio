@@ -2,7 +2,9 @@
 
 import { motion } from 'motion/react'
 import { Button } from './ui/button'
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import { SiGithub, SiLinkedin,} from "react-icons/si"
+import { ArrowDown } from 'lucide-react'
+import {HiOutlineMail as SiMail, HiOutlinePhone as SiPhone, HiOutlineMap as SiMapPin} from "react-icons/hi"
 
 export function HeroSection() {
   const scrollToProjects = () => {
@@ -104,19 +106,21 @@ export function HeroSection() {
             
             <div className="flex items-center space-x-4">
               {[
-                { icon: Github, href: '#' },
-                { icon: Linkedin, href: '#' },
-                { icon: Mail, href: '#' }
+                { icon: SiGithub, href: 'https://github.com/kanisugo'},
+                { icon: SiLinkedin, href: 'https://linkedin.com/in/kanishk-sugotra' },
+                { icon: SiMail, href: 'mailto:kani.sugotra619@gmail.com' }
               ].map(({ icon: Icon, href }, index) => (
                 <motion.a
                   key={index}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.2 + index * 0.1 }}
                   className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110"
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon size={20} aria-hidden="true" />
                 </motion.a>
               ))}
             </div>
@@ -127,15 +131,18 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-32 left-1/2 transform -translate-x-1/2"
         >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-white/60"
+          <motion.button
+            onClick={scrollToProjects}
+            aria-label="Scroll to projects"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 1.8, repeat: Infinity }}
           >
-            <ArrowDown className="w-6 h-6" />
-          </motion.div>
+            <ArrowDown size={24} />
+          </motion.button>
         </motion.div>
       </div>
     </section>

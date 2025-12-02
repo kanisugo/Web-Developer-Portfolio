@@ -12,28 +12,28 @@ export function ProjectsSection() {
       title: 'Facies Prediction using Variotional Autoencoders',
       description: 'Implemented unsupervised facies classification using VAEs for latent feature extraction and GMMs for clustering, imporving subsurface characterization accuracy by 15%.',
       image: 'https://cdn.dribbble.com/userupload/43407270/file/original-ef5fa599e0447dcbfa82f4b34b0eb01e.png?w=600&h=400&fit=crop',
-      technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
-      github: '#',
+      technologies: ['VAEs', 'Clustering', 'Semi Supervised', 'PyTorch'],
+      github: 'https://github.com/kanisugo',
       live: '#',
       featured: true
     },
     {
       title: 'Facies Prediction using DDFN Neural Net',
-      description: 'Designed and deployed Deep Feedforward Neural Networks (DFFNs) with softmax output for facies classification on well log data, achieving 92% accuracy on test datasets and enhancing reservoir modeling workflows.',
+      description: 'Designed and deployed Deep Feedforward Neural Networks (DFFNs) with softmax output for facies classification on well log data, achieving 85% accuracy on test datasets and enhancing reservoir modeling workflows.',
       image: 'https://cdn.dribbble.com/userupload/12177225/file/original-7a9990608a910dd09bf5496eabd44901.jpg?w=600&h=400&fit=crop',
-      technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
+      technologies: ['DFFN', 'Supervised', 'Classification', 'PyTorch'],
       github: '#',
       live: '#',
       featured: true
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and data visualization using Chart.js.',
+      title: 'Nano ChatGPT',
+      description: 'Developed a character-level Transformer-based language mode. implementing end-to-end dataworkflows including custom text preprocessing, tokenization, batching strategies, and training routines.',
       image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'Tailwind'],
+      technologies: ['Transformers', 'LLM', 'PyTorch'],
       github: '#',
       live: '#',
-      featured: false
+      featured: true
     },
     {
       title: 'Social Media Analytics',
