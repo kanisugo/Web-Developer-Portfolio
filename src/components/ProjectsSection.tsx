@@ -13,7 +13,7 @@ export function ProjectsSection() {
       description: 'Implemented unsupervised facies classification using VAEs for latent feature extraction and GMMs for clustering, imporving subsurface characterization accuracy by 15%.',
       image: 'https://cdn.dribbble.com/userupload/43407270/file/original-ef5fa599e0447dcbfa82f4b34b0eb01e.png?w=600&h=400&fit=crop',
       technologies: ['VAEs', 'Clustering', 'Semi Supervised', 'PyTorch'],
-      github: 'https://github.com/kanisugo',
+      github: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-Variotional-Autoencoders',
       live: '#',
       featured: true
     },
@@ -22,26 +22,26 @@ export function ProjectsSection() {
       description: 'Designed and deployed Deep Feedforward Neural Networks (DFFNs) with softmax output for facies classification on well log data, achieving 85% accuracy on test datasets and enhancing reservoir modeling workflows.',
       image: 'https://cdn.dribbble.com/userupload/12177225/file/original-7a9990608a910dd09bf5496eabd44901.jpg?w=600&h=400&fit=crop',
       technologies: ['DFFN', 'Supervised', 'Classification', 'PyTorch'],
-      github: '#',
+      github: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-DDFN-Neural-Net',
       live: '#',
       featured: true
     },
     {
       title: 'Nano ChatGPT',
       description: 'Developed a character-level Transformer-based language mode. implementing end-to-end dataworkflows including custom text preprocessing, tokenization, batching strategies, and training routines.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['Transformers', 'LLM', 'PyTorch'],
-      github: '#',
+      image: 'https://cdn.dribbble.com/userupload/10543014/file/original-4703d0ba72b72f87fa49a618a24a1f6d.gif?w=600&h=400&fit=crop',
+      technologies: ['Transformers', 'LLM', 'PyTorch', 'streamlit'],
+      github: 'https://github.com/kanisugo/chatgpt',
       live: '#',
       featured: true
     },
     {
-      title: 'Social Media Analytics',
-      description: 'A dashboard for social media analytics with real-time data processing, custom visualizations, and automated reporting.',
+      title: 'Remote Sensing Applications, Elsevier(2024)',
+      description: 'Co-Authored a paper on my dissertation topic \'PRISMA Hyperspectral Data & Ground Surveys for Mineral Mapping\'.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
-      technologies: ['Python', 'Django', 'React', 'D3.js'],
+      technologies: ['Remote Sesning', 'Mineral Mapping', 'Python'],
       github: '#',
-      live: '#',
+      live: 'https://www.sciencedirect.com/science/article/abs/pii/S2352938524002854',
       featured: false
     },
     {
@@ -80,7 +80,7 @@ export function ProjectsSection() {
           <h2 className="text-4xl md:text-5xl text-white mb-6">Featured Projects</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and passion for web development
+            Here are my recent projects that showcase my skills and passion for Geo-Data Science
           </p>
         </motion.div>
 
@@ -153,7 +153,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="mb-8"
         >
-          <h3 className="text-2xl text-white text-center mb-8">Other Projects</h3>
+          <h3 className="text-2xl text-white text-center mb-8">Other Projects and Publications</h3>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
