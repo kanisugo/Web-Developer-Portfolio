@@ -106,13 +106,13 @@ export function HeroSection() {
             
             <div className="flex items-center space-x-4">
               {[
-                { icon: SiGithub, href: 'https://github.com/kanisugo'},
-                { icon: SiLinkedin, href: 'https://linkedin.com/in/kanishk-sugotra' },
-                { icon: SiMail, href: 'mailto:kani.sugotra619@gmail.com' }
-              ].map(({ icon: Icon, href }, index) => (
+                { icon: SiGithub, href: 'https://github.com/kanisugo', label: 'GitHub' },
+                { icon: SiLinkedin, href: 'https://linkedin.com/in/kanishk-sugotra', label: 'LinkedIn' },
+                { icon: SiMail, href: 'mailto:kani.sugotra619@gmail.com', label: 'Email' }
+              ].map((social, index) => (
                 <motion.a
-                  key={index}
-                  href={href}
+                  key={social.label}
+                  href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, scale: 0 }}
@@ -120,7 +120,7 @@ export function HeroSection() {
                   transition={{ delay: 1.2 + index * 0.1 }}
                   className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110"
                 >
-                  <Icon size={20} aria-hidden="true" />
+                  <social.icon size={20} aria-hidden="true" />
                 </motion.a>
               ))}
             </div>
