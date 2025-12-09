@@ -119,7 +119,7 @@ export function HeroSection() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.2 + index * 0.1 }}
                   className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110"
-                >q
+                >
                   <social.icon size={20} aria-hidden="true" />
                 </motion.a>
               ))}

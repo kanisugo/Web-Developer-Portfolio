@@ -3,7 +3,8 @@
 import { motion } from 'motion/react'
 import { Card } from './ui/card'
 import { Button } from './ui/button'
-import { ExternalLink, Github } from 'lucide-react'
+import { SiGithub } from "react-icons/si"
+import { ExternalLink } from 'lucide-react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
 
 export function ProjectsSection() {
@@ -14,7 +15,7 @@ export function ProjectsSection() {
       image: 'https://cdn.dribbble.com/userupload/43407270/file/original-ef5fa599e0447dcbfa82f4b34b0eb01e.png?w=600&h=400&fit=crop',
       technologies: ['VAEs', 'Clustering', 'Semi Supervised', 'PyTorch'],
       github: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-Variotional-Autoencoders',
-      live: '#',
+      live: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-Variotional-Autoencoders',
       featured: true
     },
     {
@@ -23,7 +24,7 @@ export function ProjectsSection() {
       image: 'https://cdn.dribbble.com/userupload/12177225/file/original-7a9990608a910dd09bf5496eabd44901.jpg?w=600&h=400&fit=crop',
       technologies: ['DFFN', 'Supervised', 'Classification', 'PyTorch'],
       github: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-DDFN-Neural-Net',
-      live: '#',
+      live: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-DDFN-Neural-Net',
       featured: true
     },
     {
@@ -32,7 +33,7 @@ export function ProjectsSection() {
       image: 'https://cdn.dribbble.com/userupload/10543014/file/original-4703d0ba72b72f87fa49a618a24a1f6d.gif?w=600&h=400&fit=crop',
       technologies: ['Transformers', 'LLM', 'PyTorch', 'streamlit'],
       github: 'https://github.com/kanisugo/chatgpt',
-      live: '#',
+      live: 'https://github.com/kanisugo/chatgpt',
       featured: true
     },
     {
@@ -40,7 +41,7 @@ export function ProjectsSection() {
       description: 'Co-Authored a paper on my dissertation topic \'PRISMA Hyperspectral Data & Ground Surveys for Mineral Mapping\'.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
       technologies: ['Remote Sesning', 'Mineral Mapping', 'Python'],
-      github: '#',
+      github: 'https://www.sciencedirect.com/science/article/abs/pii/S2352938524002854',
       live: 'https://www.sciencedirect.com/science/article/abs/pii/S2352938524002854',
       featured: false
     },
@@ -105,14 +106,18 @@ export function ProjectsSection() {
                   <div className="absolute top-4 right-4 flex space-x-2">
                     <motion.a
                       href={project.github}
+                      target = "_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
                     >
-                      <Github className="w-5 h-5" />
+                      <SiGithub size={20} />
                     </motion.a>
                     <motion.a
                       href={project.live}
+                      target = "_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
@@ -176,12 +181,16 @@ export function ProjectsSection() {
                   <div className="absolute top-3 right-3 flex space-x-2">
                     <a
                       href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
                     >
-                      <Github className="w-4 h-4" />
+                      <SiGithub size={16} />
                     </a>
                     <a
                       href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
                     >
                       <ExternalLink className="w-4 h-4" />
