@@ -12,7 +12,7 @@ export function ProjectsSection() {
     {
       title: 'Facies Prediction using Variotional Autoencoders',
       description: 'Implemented unsupervised facies classification using VAEs for latent feature extraction and GMMs for clustering, imporving subsurface characterization accuracy by 15%.',
-      image: 'https://cdn.dribbble.com/userupload/43407270/file/original-ef5fa599e0447dcbfa82f4b34b0eb01e.png?w=600&h=400&fit=crop',
+      image: 'https://cdn.dribbble.com/userupload/27792457/file/original-0e2eb87eaf5d9eab398a74cde41dfc4d.gif',
       technologies: ['VAEs', 'Clustering', 'Semi Supervised', 'PyTorch'],
       github: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-Variotional-Autoencoders',
       live: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-Variotional-Autoencoders',
@@ -21,7 +21,7 @@ export function ProjectsSection() {
     {
       title: 'Facies Prediction using DDFN Neural Net',
       description: 'Designed and deployed Deep Feedforward Neural Networks (DFFNs) with softmax output for facies classification on well log data, achieving 85% accuracy on test datasets and enhancing reservoir modeling workflows.',
-      image: 'https://cdn.dribbble.com/userupload/12177225/file/original-7a9990608a910dd09bf5496eabd44901.jpg?w=600&h=400&fit=crop',
+      image: 'https://cdn.dribbble.com/userupload/45861310/file/9c01c2385adbaaa4a29251ca1bf46aac.png?resize=1601x1601&vertical=center',
       technologies: ['DFFN', 'Supervised', 'Classification', 'PyTorch'],
       github: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-DDFN-Neural-Net',
       live: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-DDFN-Neural-Net',
@@ -38,29 +38,29 @@ export function ProjectsSection() {
     },
     {
       title: 'Remote Sensing Applications, Elsevier(2024)',
-      description: 'Co-Authored a paper on my dissertation topic \'PRISMA Hyperspectral Data & Ground Surveys for Mineral Mapping\'.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+      description: 'Published a paper on my dissertation topic \'PRISMA Hyperspectral Data & Ground Surveys for Mineral Mapping\'.',
+      image: 'https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=600&h=400&fit=crop',
       technologies: ['Remote Sesning', 'Mineral Mapping', 'Python'],
       github: 'https://www.sciencedirect.com/science/article/abs/pii/S2352938524002854',
       live: 'https://www.sciencedirect.com/science/article/abs/pii/S2352938524002854',
       featured: false
     },
     {
-      title: 'AI Chat Interface',
-      description: 'An intelligent chat interface with natural language processing, context awareness, and multi-language support.',
-      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop',
-      technologies: ['React', 'OpenAI API', 'Node.js', 'WebSocket'],
-      github: '#',
-      live: '#',
+      title: 'Research Internship @ Indian Space Research Organisation (ISRO)',
+      description: 'Development of Spectral-Geochemical relationship using deconvolution of the rock spectra in the SWIR region to reveal the iron content of the rock.',
+      image: 'https://media.telanganatoday.com/wp-content/uploads/2024/08/ISRO-8.jpg',
+      technologies: ['Remote Sesning', 'Spectral Deconvolution', 'ML'],
+      github: 'https://medium.com/@kanishksugotra/demystifying-spectral-analysis-unlocking-the-secrets-of-mgm-for-estimating-iron-content-of-rock-6ea60ca42332',
+      live: 'https://medium.com/@kanishksugotra/demystifying-spectral-analysis-unlocking-the-secrets-of-mgm-for-estimating-iron-content-of-rock-6ea60ca42332',
       featured: false
     },
     {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website with smooth animations, dark theme, and optimized performance built with modern web technologies.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
-      technologies: ['Next.js', 'Framer Motion', 'Tailwind', 'TypeScript'],
-      github: '#',
-      live: '#',
+      title: '55th Inter IIT Sports Meet | IIT Roorkee Branding & UI/UX',
+      description: 'A complete branding and UI/UX design project for the 55th Inter IIT Sports Meet held at IIT Roorkee, including logo design, merchandise, and digital interfaces.',
+      image: 'https://cdn.dribbble.com/userupload/16669887/file/original-44d5e1fa175442f224130573419891da.png?resize=2400x1800&vertical=center?w=600&h=400&fit=crop',
+      technologies: ['UI/UX', 'Branding', 'Web Design'],
+      github: 'https://www.behance.net/gallery/180555099/55th-Inter-IIT-Sports-Meet-UIUX-Branding',
+      live: 'https://www.behance.net/gallery/180555099/55th-Inter-IIT-Sports-Meet-UIUX-Branding',
       featured: false
     }
   ]

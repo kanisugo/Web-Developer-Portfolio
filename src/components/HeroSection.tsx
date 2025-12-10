@@ -2,7 +2,8 @@
 
 import { motion } from 'motion/react'
 import { Button } from './ui/button'
-import { SiGithub, SiLinkedin,} from "react-icons/si"
+import { SiGithub, SiLinkedin, SiReadthedocs} from "react-icons/si"
+import {FiFileText} from "react-icons/fi"
 import { ArrowDown } from 'lucide-react'
 import {HiOutlineMail as SiMail, HiOutlinePhone as SiPhone, HiOutlineMap as SiMapPin} from "react-icons/hi"
 
@@ -108,7 +109,8 @@ export function HeroSection() {
               {[
                 { icon: SiGithub, href: 'https://github.com/kanisugo', label: 'GitHub' },
                 { icon: SiLinkedin, href: 'https://linkedin.com/in/kanishk-sugotra', label: 'LinkedIn' },
-                { icon: SiMail, href: 'mailto:kani.sugotra619@gmail.com', label: 'Email' }
+                { icon: SiMail, href: 'mailto:kani.sugotra619@gmail.com', label: 'Email' },
+                { icon: FiFileText, href: 'https://drive.google.com/file/d/1Njm5Ff2r2AF1ScXDOsiG3_fr1feShmAH/view?usp=sharing', label: 'Resume' }
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
