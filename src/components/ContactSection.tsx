@@ -9,6 +9,7 @@ import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si"
 import {HiOutlineMail as SiMail, HiOutlinePhone as SiPhone, HiOutlineMap as SiMapPin} from "react-icons/hi"
 
 
+
 export function ContactSection() {
   const contactInfo = [
     {
@@ -27,7 +28,7 @@ export function ContactSection() {
       icon: SiMapPin,
       label: 'Location',
       value: 'Mumbai, India',
-      href: 'https://www.google.com/maps/place/Mumbai,+Maharashtra/@19.0824822,72.7141305,11z/data=!3m1!4b1!4m6!3m5!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!8m2!3d18.9581934!4d72.8320729!16zL20vMDR2bXA?authuser=0&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D'
+      href: 'https://www.google.com/maps/place/Mumbai,+Maharashtra,+India'
     }
   ]
 
@@ -66,51 +67,68 @@ export function ContactSection() {
           >
             <Card className="p-8 bg-gray-900/50 border-white/10">
               <h3 className="text-2xl text-white mb-6">Send me a message</h3>
-              <form className="space-y-6">
+              <form
+                className="space-y-6"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
+                {/* web3forms required hidden inputs */}
+                <input type="hidden" name="access_key" value="c72d4d06-c25d-4b5e-af95-b02eeb9a96ac" />
+                <input type="hidden" name="subject" value="New message from portfolio contact form" />
+                <input type="hidden" name="redirect" value="https://your-site.com/thank-you" />
+
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-gray-300 text-sm mb-2 block">First Name</label>
                     <Input
+                      name="first_name"
                       placeholder="Your first name"
                       className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                      required
                     />
                   </div>
                   <div>
                     <label className="text-gray-300 text-sm mb-2 block">Last Name</label>
                     <Input
+                      name="last_name"
                       placeholder="Your last name"
                       className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="text-gray-300 text-sm mb-2 block">Email</label>
                   <Input
+                    name="email"
                     type="email"
                     placeholder="your.email@example.com"
                     className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                    required
                   />
                 </div>
-                
+
                 <div>
                   <label className="text-gray-300 text-sm mb-2 block">Subject</label>
                   <Input
+                    name="subject_field"
                     placeholder="Project discussion"
                     className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
                   />
                 </div>
-                
+
                 <div>
                   <label className="text-gray-300 text-sm mb-2 block">Message</label>
                   <Textarea
+                    name="message"
                     placeholder="Tell me about your project..."
                     rows={5}
                     className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500 resize-none"
+                    required
                   />
                 </div>
-                
-                <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3">
+
+                <Button type="submit" className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3">
                   Send Message
                 </Button>
               </form>
@@ -139,6 +157,8 @@ export function ContactSection() {
                 <motion.a
                   key={info.label}
                   href={info.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
