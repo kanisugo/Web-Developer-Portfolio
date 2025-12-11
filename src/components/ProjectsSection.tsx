@@ -12,7 +12,7 @@ export function ProjectsSection() {
     {
       title: 'Facies Prediction using Variotional Autoencoders',
       description: 'Implemented unsupervised facies classification using VAEs for latent feature extraction and GMMs for clustering, imporving subsurface characterization accuracy by 15%.',
-      image: 'https://cdn.dribbble.com/userupload/27792457/file/original-0e2eb87eaf5d9eab398a74cde41dfc4d.gifq',
+      image: 'https://cdn.dribbble.com/userupload/27792457/file/original-0e2eb87eaf5d9eab398a74cde41dfc4d.gif',
       technologies: ['VAEs', 'Clustering', 'Semi Supervised', 'PyTorch'],
       github: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-Variotional-Autoencoders',
       live: 'https://github.com/kanisugo/Multi-Class-Facies-Prediction-using-Variotional-Autoencoders',
