@@ -27,7 +27,7 @@ export function ContactSection() {
       icon: SiMapPin,
       label: 'Location',
       value: 'Mumbai, India',
-      href: '#'
+      href: 'https://www.google.com/maps/place/Mumbai,+Maharashtra/@19.0824822,72.7141305,11z/data=!3m1!4b1!4m6!3m5!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!8m2!3d18.9581934!4d72.8320729!16zL20vMDR2bXA?authuser=0&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D'
     }
   ]
 
