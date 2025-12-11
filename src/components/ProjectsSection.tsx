@@ -6,7 +6,21 @@ import { Button } from './ui/button'
 import { SiGithub } from "react-icons/si"
 import { ExternalLink } from 'lucide-react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
-
+if (typeof window !== 'undefined') {
+  const STYLE_ID = 'projects-hide-github-icon-style'
+  if (!document.getElementById(STYLE_ID)) {
+    const style = document.createElement('style')
+    style.id = STYLE_ID
+    style.innerHTML = `
+      /* Hide the first (GitHub) anchor in the image overlay controls so only the live/external icon remains */
+      .absolute.top-4.right-4 > a:first-child,
+      .absolute.top-3.right-3 > a:first-child {
+        display: none !important;
+      }
+    `
+    document.head.appendChild(style)
+  }
+}
 export function ProjectsSection() {
   const projects = [
     {
